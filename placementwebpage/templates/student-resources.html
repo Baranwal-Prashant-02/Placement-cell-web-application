@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}Placement Cell Homepage{% endblock %}
+
+{% block content %}
+
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Job Openings</h1>
+    
+        <!-- Job listings -->
+        {% if jobs %}
+            <div class="row">
+                {% for job in jobs %}
+                    <div class="col-md-4 mb-4 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ job.title }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+                                <p class="card-text"><strong>Location:</strong> {{ job.location }}</p>
+                                <p class="card-text"><strong>Salary:</strong> {{ job.salary }}</p>
+                                <p class="card-text"><strong>Description:</strong> {{ job.description }}</p>
+                                <p class="card-text"><strong>Requirements:</strong> {{ job.requirements }}</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="text-center">No jobs available right now.</p>
+        {% endif %}
+    </div>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Student Resources</h2>
+            <p>Everything you need to excel in your placement journey.</p>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources">
+        <h2>Available Resources</h2>
+        <div class="resource-cards">
+            <div class="card">
+                <h3>Resume Building Tips</h3>
+                <p>Learn how to create a professional resume that stands out to employers.</p>
+                <a href="https://in.indeed.com/career-advice/resumes-cover-letters/10-resume-writing-tips">View Tips</a>
+            </div>
+            <div class="card">
+                <h3>Interview Preparation</h3>
+                <p>Prepare for interviews with expert advice and sample questions.</p>
+                <a href="https://prepinsta.com/interview-preparation/">Start Preparing</a>
+            </div>
+            <div class="card">
+                <h3>Upcoming Events</h3>
+                <p>Stay updated with the latest workshops, webinars, and recruitment drives.</p>
+                <a href="#">View Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="contact-info">
+            <p>Placement Cell, University Campus</p>
+            <p>Email: placement@university.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Placement Cell Homepage{% endblock %}
+
+{% block content %}
+    <!-- Hero Section for Placements Page -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Pathway to a Bright Future</h2>
+            <p>Explore available job opportunities, and connect with top companies hiring students from our campus.</p>
+        </div>
+    </section>
+
+    <!-- Available Job Opportunities Section -->
+    <section class="job-opportunities">
+        <h2>Available Job Opportunities</h2>
+        <p>Browse the latest job openings from companies looking for talented students like you!</p>
+        <div class="job-list">
+            <!-- Job Listing 1 -->
+            <div class="job-item">
+                <h3>Software Developer</h3>
+                <p>Company: Tech Innovations Ltd.</p>
+                <p>Location: New York, USA</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+            <!-- Job Listing 2 -->
+            <div class="job-item">
+                <h3>Data Analyst</h3>
+                <p>Company: Data Solutions Inc.</p>
+                <p>Location: London, UK</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+            <!-- Job Listing 3 -->
+            <div class="job-item">
+                <h3>Marketing Specialist</h3>
+                <p>Company: Marketing Experts</p>
+                <p>Location: San Francisco, USA</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Process Section -->
+    <section class="placement-process">
+        <h2>Our Placement Process</h2>
+        <p>Our placement process ensures that students are well-prepared for the job market. Here are the steps:</p>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Registration</h3>
+                <p>Students must register on the placement portal to start receiving job opportunities.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Resume Submission</h3>
+                <p>Students upload their updated resumes to apply for job openings.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Pre-Placement Talks</h3>
+                <p>Companies host pre-placement talks to introduce students to their work culture and job roles.</p>
+            </div>
+            <div class="step">
+                <h3>Step 4: Interview</h3>
+                <p>Students participate in interviews, both technical and HR, with hiring companies.</p>
+            </div>
+            <div class="step">
+                <h3>Step 5: Offer and Placement</h3>
+                <p>Selected students receive job offers and are placed in their respective companies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources for Students Section -->
+    <section class="resources">
+        <h2>Resources for Students</h2>
+        <p>Prepare yourself for placements by making use of the following resources:</p>
+        <div class="links">
+            <a href="https://www.coursera.org/articles/how-to-make-a-resume">Resume Building Guide</a>
+            <a href="https://prepinsta.com/interview-preparation/">Interview Preparation Tips</a>
+            <a href="#">Company Pre-Placement Talk Schedule</a>
+            <a href="#">Placement FAQs</a>
+        </div>
+    </section>
+{% endblock %}
