@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Placement Cell Homepage{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h2>Empowering Students for a Successful Career</h2>
+        <p>Connecting talent with top companies, creating pathways for your future.</p>
+        <div class="cta-buttons">
+            <a href="http://localhost:5000/students" class="btn btn-light mx-2">Explore Opportunities</a>
+            <a href="/registration" class="btn btn-light mx-2">Register for Placement</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Placement Statistics Section -->
+<section class="statistics bg-light py-5">
+    <div class="container text-center">
+        <h2>Our Placement Impact</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>50+</h3>
+                <p>Companies Visiting</p>
+            </div>
+            <div class="col-md-4">
+                <h3>90%</h3>
+                <p>Students Placed</p>
+            </div>
+            <div class="col-md-4">
+                <h3>$70,000</h3>
+                <p>Average Salary</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- For Students Section -->
+<section class="students py-5">
+    <div class="container text-center">
+        <h2>For Students</h2>
+        <a href="https://in.indeed.com/career-advice/resumes-cover-letters/10-resume-writing-tips" class="d-block mb-2">Resume Building Tips</a>
+        <a href="https://prepinsta.com/interview-preparation/" class="d-block mb-2">Interview Preparation</a>
+        <a href="#" class="d-block">Upcoming Events</a>
+    </div>
+</section>
+
+<!-- For Companies Section -->
+<section class="companies bg-light py-5">
+    <div class="container text-center">
+        <h2>For Companies</h2>
+        <a href="http://localhost:5000/post-job" class="d-block mb-2">Post Job Openings</a>
+        <a href="#" class="d-block mb-2">Recruitment Process</a>
+        <a href="#" class="d-block">FAQs</a>
+    </div>
+</section>
+
+<!-- Placement Process Section -->
+<section class="process py-5">
+    <div class="container text-center">
+        <h2>How It Works</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Step 1: Register</h3>
+                <p>Sign up on the portal.</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Step 2: Submit Resume</h3>
+                <p>Upload your resume.</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Step 3: Interview</h3>
+                <p>Participate in interviews.</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Step 4: Placement</h3>
+                <p>Get your job offer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

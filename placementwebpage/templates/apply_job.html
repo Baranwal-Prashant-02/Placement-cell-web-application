@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block title %}Apply For Job{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+
+```
+<div class="card shadow">
+    <div class="card-header bg-primary text-white">
+        <h3>Apply for {{ job.title }}</h3>
+        <p class="mb-0">{{ job.company }}</p>
+    </div>
+
+    <div class="card-body">
+
+        <form method="POST" enctype="multipart/form-data">
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <label>First Name *</label>
+                    <input type="text"
+                           name="first_name"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Last Name *</label>
+                    <input type="text"
+                           name="last_name"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Course *</label>
+                    <select name="course"
+                            class="form-control"
+                            required>
+
+                        <option value="">Select Course</option>
+                        <option>BTech</option>
+                        <option>BBA</option>
+                        <option>BCA</option>
+                        <option>MBA</option>
+                        <option>BPharma</option>
+                        <option>BDS</option>
+
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Branch *</label>
+                    <input type="text"
+                           name="branch"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Year of Passing *</label>
+                    <input type="number"
+                           name="yop"
+                           min="2020"
+                           max="2035"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Organisation Name *</label>
+                    <input type="text"
+                           name="organisation_name"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label>Permanent Address *</label>
+                    <textarea
+                        name="permanent_address"
+                        rows="3"
+                        class="form-control"
+                        required></textarea>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Email *</label>
+                    <input type="email"
+                           name="email"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Contact Number *</label>
+                    <input type="tel"
+                           name="contact"
+                           maxlength="10"
+                           class="form-control"
+                           required>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label>Resume (PDF only, Max 5MB) *</label>
+                    <input type="file"
+                           name="resume"
+                           class="form-control"
+                           accept=".pdf"
+                           required>
+                </div>
+
+            </div>
+
+            <button type="submit"
+                    class="btn btn-success">
+                Submit Application
+            </button>
+
+            <a href="{{ url_for('students') }}"
+               class="btn btn-secondary">
+               Cancel
+            </a>
+
+        </form>
+
+    </div>
+</div>
+```
+
+</div>
+
+{% endblock %}
