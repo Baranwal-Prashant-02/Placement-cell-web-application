@@ -238,46 +238,46 @@ G --> K[JobApplicantDetails]
 
   Column
   --------------
-  id
-  title
-  company
-  location
-  description
-  requirements
-  salary
+  id,
+  title,
+  company,
+  location,
+  description,
+  requirements,
+  salary,
 
 ### Registration
 
   Column
   -----------------
-  id
-  name
-  email
-  phone
-  degree
+  id,
+  name,
+  email,
+  phone,
+  degree,
   resume_filename
 
 ### JobApplicantDetails
 
   Column
   -------------------
-  id
-  job_id
-  first_name
-  last_name
-  course
-  branch
-  yop
-  organisation_name
-  permanent_address
-  email
-  contact
+  id,
+  job_id,
+  first_name,
+  last_name,
+  course,
+  branch,
+  yop,
+  organisation_name,
+  permanent_address,
+  email,
+  contact,
   resume_filename
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Technology Stack
-
+``` text
   Technology   Purpose
   ------------ ---------------------
   Python       Backend Programming
@@ -289,7 +289,7 @@ G --> K[JobApplicantDetails]
   Bootstrap    Responsive UI
   Jinja2       Dynamic Templates
   Werkzeug     Secure File Upload
-
+```
 ------------------------------------------------------------------------
 
 ## 📂 Project Structure
