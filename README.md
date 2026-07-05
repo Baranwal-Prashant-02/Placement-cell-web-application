@@ -296,12 +296,36 @@ G --> K[JobApplicantDetails]
 
 ``` text
 PLACEMENTWEBPAGE/
-├── app.py
+│
+├── app.py                     # Main Flask application
 ├── instance/
-│   └── jobs.db
-├── uploads/
+│   └── jobs.db                # SQLite database
+│
+├── uploads/                   # Uploaded PDF resumes
+│
 ├── static/
+│   ├── about.css
+│   ├── companies.css
+│   ├── contact.css
+│   ├── login.css
+│   ├── registration.css
+│   ├── std-resources.css
+│   ├── styles.css
+│   └── ...
+│
 ├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── login.html
+│   ├── registration.html
+│   ├── post_job.html
+│   ├── student-resources.html
+│   ├── apply_job.html
+│   ├── placement.html
+│   └── ...
+│
 └── README.md
 ```
 
